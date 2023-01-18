@@ -21,9 +21,6 @@ public class TdPegawaiClassRepository {
 
     public List<TdPegawai> getDataPegawai(Integer offset){
 
-        StringBuilder qb = new StringBuilder();
-        String sisipan = qb.toString();
-
         Query query = entityManager.createNativeQuery("SELECT cast(id_pegawai as varchar), " +
                 "nama, " +
                 "jenis_kelamin, " +
